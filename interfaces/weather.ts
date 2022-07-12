@@ -1,0 +1,17 @@
+export type IWeather =
+  | "Thunderstorm"
+  | "Drizzle"
+  | "Rain"
+  | "Snow"
+  | "Clouds"
+  | "Clear"
+  | "Mist"
+  | "Smoke"
+  | "Haze"
+  | "Dust"
+  | "Fog"
+  | "Sand"
+  | "Dust"
+  | "Ash"
+  | "Squall"
+  | "Tornad";
