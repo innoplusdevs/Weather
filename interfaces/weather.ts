@@ -1,4 +1,4 @@
-export type IWeather =
+export type IWeatherConditions =
   | "Thunderstorm"
   | "Drizzle"
   | "Rain"

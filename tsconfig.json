@@ -18,7 +18,7 @@
     "paths": {
       "components": ["./components/*"],
       "interfaces": ["./interfaces/*"],
-      "config": ["./config/*"],
+      "data": ["./data/*"],
       "styles": ["./styles/*"]
     }
   },
