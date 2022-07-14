@@ -16,20 +16,22 @@ export type IWeatherConditions =
   | "Squall"
   | "Tornad";
 
+export type TWeather = [
+  {
+    id: number;
+    main: string;
+    description: string;
+    icon: string;
+  }
+];
+
 export interface IWeather {
   data: {
     coord: {
       lon: number;
       lat: number;
     };
-    weather: [
-      {
-        id: number;
-        main: string;
-        description: string;
-        icon: string;
-      }
-    ];
+    weather: TWeather;
     base: string;
     main: {
       temp: number;

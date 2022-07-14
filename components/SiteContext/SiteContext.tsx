@@ -3,12 +3,12 @@ import React, { createContext, useContext } from "react";
 // site config
 import config from "site.config";
 
-// interfaces
-import { IProps } from "interfaces/props";
+// interfaces && types
+import { TWithChildren } from "interfaces/props";
 
 const store = createContext({});
 
-function SiteContext({ children }: IProps) {
+function SiteContext({ children }: TWithChildren) {
   return <store.Provider value={config}>{children}</store.Provider>;
 }
 

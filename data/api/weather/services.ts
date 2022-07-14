@@ -1,8 +1,12 @@
 import { GET_WEATHER_INFO } from "./schema";
 
-export async function getWeatherInfo(lat: string, lon: string) {
-  console.log(process.env.NEXT_PUBLIC_OPEN_WEATHER_MAP_API_URL, "sass");
+// interfaces && types
+import { TWeather } from "interfaces/weather";
 
+export async function getWeatherInfo(
+  lat: number,
+  lon: number
+): Promise<TWeather | { error: string }> {
   try {
     const { data } = await GET_WEATHER_INFO(lat, lon);
 
